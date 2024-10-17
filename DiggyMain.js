@@ -1,4 +1,4 @@
-// Need to check logs to help with Bug fixing
+// Need to check console to ensure script is loaded an running.
 console.log("DiggyMain.js is loaded successfully!");
 
 // External Java Scripts for Diggy's Indie Dome - keep minmimal for load time please.
