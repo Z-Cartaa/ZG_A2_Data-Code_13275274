@@ -6,6 +6,7 @@
 }
 /* End of Basic Box */
 
+
 /* Start of Basic Body Styles */
 body {
     font-family: Arial, sans-serif;
@@ -15,6 +16,7 @@ body {
     padding: 20px;
 }
 /* End of Basic Body Styles */
+
 
 /* Start of Header Styles */
 header {
@@ -60,14 +62,13 @@ a h1 {
     text-decoration: none;
     color: #FFD700;
 }
-
-
 a h1:hover {
-    text-decoration: none;
+    text-decoration: underline;
     text-decoration-color: white; /* Set underline color to white */
 }
 /* Header Title Link - End */
 /* End of Header "Motion" */
+
 
 /* Start of Featured Content Styles */
 .featured-content {
@@ -100,6 +101,7 @@ a h1:hover {
 }
 /* End of Featured Content Styles */
 
+
 /* Start of Call to Action Section Styles */
 .call-to-action {
     display: flex;
@@ -128,6 +130,7 @@ a h1:hover {
     background-color: #FFD700;
 }
 /* End of Call to Action Section Styles */
+
 
 /* Start of Footer Styles */
 footer {
