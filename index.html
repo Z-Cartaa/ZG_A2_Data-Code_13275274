@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,34 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome to Diggy's Indie Dome</title>
     <!-- Link to the external CSS file -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="DiggityStyle.css">
 </head>
 <body>
     <header>
-        <nav>
-            <h1>Diggy's Indie Dome</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#community">Community</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <h1>Diggy Indie Dome</h1>
+            <div class="header-buttons">
+                <button class="invite-button">Invite</button>
+                <button class="id-button">ID</button>
+            </div>
+        </div>
     </header>
 
     <main>
-        <section id="about">
-            <h2>About Diggy's Indie Dome</h2>
-            <p>Welcome to a decentralized platform where the Diggy Doo’s community can share memories and experiences without algorithms and ads. We value content ownership and authentic engagement.</p>
+        <!-- Featured Content -->
+        <section class="featured-content">
+            <div class="featured-item">
+                <h2>Title</h2>
+                <p><strong>ID:</strong> ExampleID123</p>
+                <p><strong>Bio:</strong> This is a sample bio for the featured content.</p>
+            </div>
         </section>
 
-        <section id="community">
-            <h2>Our Community</h2>
-            <p>Join us to be part of a vibrant group of creatives, coffee enthusiasts, and passionate hobbyists. Share your stories and memories with us.</p>
+        <!-- Community Content Cards -->
+        <section class="content-cards">
+            <div class="content-card">
+                <p><strong>ID:</strong> UserID1</p>
+                <p><strong>Bio:</strong> This is a user bio.</p>
+                <p><strong>Date:</strong> 10/12/2024</p>
+            </div>
+            <div class="content-card">
+                <p><strong>ID:</strong> UserID2</p>
+                <p><strong>Bio:</strong> Another user bio.</p>
+                <p><strong>Date:</strong> 11/12/2024</p>
+            </div>
+            <div class="content-card">
+                <p><strong>ID:</strong> UserID3</p>
+                <p><strong>Bio:</strong> Yet another bio.</p>
+                <p><strong>Date:</strong> 12/12/2024</p>
+            </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Want to get in touch? Email us at: <a href="mailto:diggys@diggydoos.com">diggys@diggydoos.com</a></p>
+        <!-- Call to Action Section -->
+        <section class="call-to-action">
+            <div class="cta-blurb">
+                <h2>Call to Action Title</h2>
+                <p>Blurb about why people should join the community and engage.</p>
+            </div>
+            <div class="cta-archive">
+                <button class="archive-button">Archive</button>
+            </div>
         </section>
     </main>
 
@@ -41,4 +65,3 @@
     </footer>
 </body>
 </html>
-
