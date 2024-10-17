@@ -1,3 +1,6 @@
+// Need to check logs to help with Bug fixing
+console.log("DiggyMain.js is loaded successfully!");
+
 // External Java Scripts for Diggy's Indie Dome - keep minmimal for load time please.
 
 // Start of Invite button interaction
