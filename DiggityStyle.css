@@ -1,3 +1,4 @@
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -21,49 +22,88 @@ header {
     border-bottom: 5px solid #FF9E0B;
 }
 
-header h1 {
-    font-size: 2.5rem;
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 10px 0;
+.header-buttons {
+    display: flex;
+    gap: 10px;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+.invite-button, .id-button {
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
-nav ul li a {
-    color: #FFD700;
-    text-decoration: none;
+.invite-button {
+    background-color: #FFD700;
 }
 
-nav ul li a:hover {
+.id-button {
+    background-color: #FF9E0B;
+}
+
+/* Featured Content Styles */
+.featured-content {
+    background-color: #EAF5EA;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
+
+.featured-item h2 {
     color: #FF9E0B;
-    text-decoration: underline;
 }
 
-/* Main Content Styles */
-main {
-    margin: 40px 0;
-}
-
-main section {
-    margin-bottom: 40px;
-}
-
-main h2 {
-    color: #FF9E0B;
-    font-size: 2rem;
+/* Content Cards Styles */
+.content-cards {
+    display: flex;
+    gap: 20px;
     margin-bottom: 20px;
 }
 
-main p {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 20px;
+.content-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: calc(33.33% - 20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Call to Action Section Styles */
+.call-to-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
+
+.cta-blurb {
+    max-width: 70%;
+}
+
+.archive-button {
+    padding: 15px 25px;
+    background-color: #FF9E0B;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.archive-button:hover {
+    background-color: #FFD700;
 }
 
 /* Footer Styles */
