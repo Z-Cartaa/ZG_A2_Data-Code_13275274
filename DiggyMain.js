@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
             event.preventDefault(); // Prevent the default link action
             this.textContent = "TBC"; // Change the button text to "TBC"
         });
+    } else {
+        console.error("Invite button not found."); // Debugging error to know if the button isn't found
     }
 });
 // End of Invite button interaction
