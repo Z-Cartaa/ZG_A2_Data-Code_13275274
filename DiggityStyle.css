@@ -1,10 +1,12 @@
-/* Basic Reset */
+/* Start of Basic Box */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* End of Basic Box */
 
+/* Start of Basic Body Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -12,8 +14,9 @@ body {
     line-height: 1.6;
     padding: 20px;
 }
+/* End of Basic Body Styles */
 
-/* Header Styles */
+/* Start of Header Styles */
 header {
     background-color: #000000;
     color: #FFD700;
@@ -48,8 +51,25 @@ header {
 .id-button {
     background-color: #FF9E0B;
 }
+/* End of Header Styles */
 
-/* Featured Content Styles */
+/* Start of Header "Motion" */
+
+/* Header Title Link - Start */
+a h1 {
+    text-decoration: none;
+    color: inherit; /* Keep the original color of the h1 */
+}
+
+
+a h1:hover {
+    text-decoration: underline;
+    text-decoration-color: white; /* Set underline color to white */
+}
+/* Header Title Link - End */
+/* End of Header "Motion" */
+
+/* Start of Featured Content Styles */
 .featured-content {
     background-color: #EAF5EA;
     padding: 20px;
@@ -61,6 +81,7 @@ header {
 .featured-item h2 {
     color: #FF9E0B;
 }
+
 
 /* Content Cards Styles */
 .content-cards {
@@ -77,8 +98,9 @@ header {
     width: calc(33.33% - 20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+/* End of Featured Content Styles */
 
-/* Call to Action Section Styles */
+/* Start of Call to Action Section Styles */
 .call-to-action {
     display: flex;
     justify-content: space-between;
@@ -105,8 +127,9 @@ header {
 .archive-button:hover {
     background-color: #FFD700;
 }
+/* End of Call to Action Section Styles */
 
-/* Footer Styles */
+/* Start of Footer Styles */
 footer {
     background-color: #000000;
     color: #FFFFFF;
@@ -118,3 +141,4 @@ footer {
 footer p {
     font-size: 0.9rem;
 }
+/* End of Footer Styles */
