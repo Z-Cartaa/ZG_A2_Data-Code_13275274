@@ -147,7 +147,7 @@ footer p {
 }
 /* End of Footer Styles */
 
-/* Profile Page Styles */
+/* Start of Profile Page Styles */
 .profile-container {
     max-width: 800px;
     margin: 20px auto;
@@ -200,6 +200,21 @@ footer p {
 .profile-details td {
     padding: 8px;
 }
+
+.support-email-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.support-email {
+    background-color: #FF9E0B;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* End of Profile Page Styles */
 
 /* Archive Page Styles */
 .archive-container {
