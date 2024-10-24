@@ -268,3 +268,33 @@ footer p {
     opacity: 0.8;
 }
 /* End of General Button Styles */
+
+/* Additional Styles for Responsiveness and Enhancements */
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .header-container, .content-cards, .call-to-action {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .content-card {
+        width: 100%;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* Button Hover Effects */
+.button:hover, .invite-button:hover {
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+    
