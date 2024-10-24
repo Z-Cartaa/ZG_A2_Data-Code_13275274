@@ -1,13 +1,12 @@
-/* Start of Basic Box */
+/* Start of Basic Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* End of Basic Box */
+/* End of Basic Reset */
 
-
-/* Start of Basic Body Styles */
+/* Start of Body Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -15,8 +14,7 @@ body {
     line-height: 1.6;
     padding: 20px;
 }
-/* End of Basic Body Styles */
-
+/* End of Body Styles */
 
 /* Start of Header Styles */
 header {
@@ -38,7 +36,7 @@ header {
     gap: 10px;
 }
 
-.invite-button, .id-button {
+.invite-button, .id-button, .home-button {
     padding: 10px;
     border: none;
     color: white;
@@ -50,26 +48,27 @@ header {
     background-color: #FFD700;
 }
 
-.id-button {
+.id-button, .home-button {
     background-color: #FF9E0B;
 }
 /* End of Header Styles */
 
-/* Start of Header "Motion" */
+/* Start of Header Motion */
 
 /* Header Title Link - Start */
-a h1 {
+a.header-link h1 {
     text-decoration: none;
     color: #FFD700;
     transition: text-decoration 0.3s ease, text-decoration-color 0.3s ease;
 }
-a h1:hover {
+
+a.header-link h1:hover {
     text-decoration: underline;
     text-decoration-color: white;
 }
 /* Header Title Link - End */
-/* End of Header "Motion" */
 
+/* End of Header Motion */
 
 /* Start of Featured Content Styles */
 .featured-content {
@@ -83,9 +82,9 @@ a h1:hover {
 .featured-item h2 {
     color: #FF9E0B;
 }
+/* End of Featured Content Styles */
 
-
-/* Content Cards Styles */
+/* Start of Content Cards Styles */
 .content-cards {
     display: flex;
     gap: 20px;
@@ -100,8 +99,7 @@ a h1:hover {
     width: calc(33.33% - 20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-/* End of Featured Content Styles */
-
+/* End of Content Cards Styles */
 
 /* Start of Call to Action Section Styles */
 .call-to-action {
@@ -131,7 +129,6 @@ a h1:hover {
     background-color: #FFD700;
 }
 /* End of Call to Action Section Styles */
-
 
 /* Start of Footer Styles */
 footer {
@@ -216,7 +213,7 @@ footer p {
 }
 /* End of Profile Page Styles */
 
-/* Archive Page Styles */
+/* Start of Archive Page Styles */
 .archive-container {
     max-width: 800px;
     margin: 20px auto;
@@ -243,14 +240,18 @@ footer p {
     font-weight: bold;
 }
 
-/* User ID and Profile Button Section */
-.user-id-section {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+.archive-user-id, .archive-profile {
+    background-color: #FF9E0B;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
+/* End of Archive Page Styles */
 
-.archive-user-id, .profile {
+/* General Button Styles */
+.button {
     background-color: #FF9E0B;
     color: #fff;
     padding: 10px 15px;
@@ -259,3 +260,11 @@ footer p {
     cursor: pointer;
 }
 
+.invite-button {
+    background-color: #FFD700;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+/* End of General Button Styles */
