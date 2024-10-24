@@ -29,7 +29,8 @@
                 <h2>Profile</h2>
                 <div class="profile-image">
                     <img src="profile-pic-placeholder.png" alt="Profile Picture" id="profile-pic">
-                    <button class="upload-image-button">Upload Image</button>
+                    <button class="upload-image-button" onclick="document.getElementById('profile-image-input').click();">Upload Image</button>
+                    <input type="file" id="profile-image-input" style="display:none;" accept="image/*" onchange="uploadImage(event)">
                 </div>
                 <table class="profile-details">
                     <tr>
@@ -52,7 +53,7 @@
             </div>
             <div class="support-email-section">
                 <p>Support Email:</p>
-                <button class="support-email">Support Email</button>
+                <button class="support-email" onclick="window.location.href='mailto:support@diggydoos.com'">Support Email</button>
             </div>
         </div>
     </main>
