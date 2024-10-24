@@ -1,10 +1,66 @@
-<main>
-    <h2>Your Profile</h2>
-    <div class="profile-info">
-        <img src="profile-pic-placeholder.png" alt="Profile Picture">
-        <p><strong>Name:</strong> Your Name</p>
-        <p><strong>Hobbies:</strong> Your hobbies...</p>
-        <p><strong>Coffee Order:</strong> Your favorite coffee...</p>
-        <button>Edit Profile</button>
-    </div>
-</main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile - Diggy Indie Dome</title>
+    <link rel="stylesheet" href="DiggityStyle.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="header-link">
+                <h1>Diggy Indie Dome</h1>
+            </a>
+            <div class="header-buttons">
+                <button class="home-button" onclick="window.location.href='index.html'">HomePage</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="profile-container">
+            <div class="user-id-section">
+                <button class="profile-user-id">User ID</button>
+                <button class="profile">Profile</button>
+            </div>
+            <div class="profile-info">
+                <h2>Profile</h2>
+                <div class="profile-image">
+                    <img src="profile-pic-placeholder.png" alt="Profile Picture" id="profile-pic">
+                    <button class="upload-image-button">Upload Image</button>
+                </div>
+                <table class="profile-details">
+                    <tr>
+                        <td><strong>Profile Image:</strong></td>
+                        <td>To be added...</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Name:</strong></td>
+                        <td>Your Name</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hobbies:</strong></td>
+                        <td>Your hobbies...</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Coffee Order:</strong></td>
+                        <td>Your favorite coffee...</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="support-email-section">
+                <p>Support Email:</p>
+                <button class="support-email">Support Email</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Diggy Doo's Indie Dome. All rights reserved.</p>
+    </footer>
+
+    <script src="DiggyMain.js" defer></script>
+</body>
+</html>
