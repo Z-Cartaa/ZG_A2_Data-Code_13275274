@@ -1,7 +1,65 @@
-<main>
-    <h2>Archive</h2>
-    <div class="archive-list">
-        <p>Explore past events and community highlights here.</p>
-        <!-- Placeholder for archived content -->
-    </div>
-</main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Archive - Diggy Indie Dome</title>
+    <link rel="stylesheet" href="DiggityStyle.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="header-link">
+                <h1>Diggy Indie Dome</h1>
+            </a>
+            <div class="header-buttons">
+                <button class="home-button" onclick="window.location.href='index.html'">HomePage</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="archive-container">
+            <div class="user-id-section">
+                <button class="archive-user-id">User ID</button>
+                <button class="profile">Profile</button>
+            </div>
+            <h2>Archive</h2>
+            <table class="archive-table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Date</th>
+                        <th>Format</th>
+                        <th>Bio</th>
+                        <th>Likes</th>
+                        <th>Content ID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Placeholder for archived content -->
+                    <tr>
+                        <td>Sample Title</td>
+                        <td>2024-10-20</td>
+                        <td>Image/Video</td>
+                        <td>A brief description...</td>
+                        <td>50</td>
+                        <td>001</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="support-email-section">
+                <p>Support Email:</p>
+                <button class="support-email">Support Email</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Diggy Doo's Indie Dome. All rights reserved.</p>
+    </footer>
+
+    <script src="DiggyMain.js" defer></script>
+</body>
+</html>
