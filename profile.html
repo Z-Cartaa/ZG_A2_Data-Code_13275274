@@ -8,21 +8,8 @@
     <link rel="stylesheet" href="DiggityStyle.css">
 </head>
 <body>
-    
-<header>
-    <div class="header-container">
-        <a href="index.html" class="header-link">
-            <h1>Diggy Indie Dome</h1>
-        </a>
-        <div class="header-buttons">
-            <button id="inviteButton" class="invite-button">Invite</button>
-            <a href="profile.html">
-                <button class="id-button">ID</button>
-            </a>
-        </div>
-    </div>
-</header>
-
+    <!-- Standard header -->
+    <header>
         <div class="header-container">
             <a href="index.html" class="header-link">
                 <h1>Diggy Indie Dome</h1>
@@ -36,50 +23,79 @@
     <main>
         <div class="profile-container">
             <div class="user-id-section">
-                <button class="profile-user-id">User ID</button>
-                <button class="profile">Profile</button>
+                <!-- Placeholder for future dynamic BlueSky User ID and Profile -->
+                <button class="profile-user-id">User ID: {{BlueSky User ID}}</button>
+                <button class="profile">Profile: {{BlueSky Domain}}</button>
             </div>
             <div class="profile-info">
                 <h2>Profile</h2>
+                
+                <!-- Profile Image Section -->
                 <div class="profile-image">
-                    <img src="profile-pic-placeholder.png" alt="Profile Picture" id="profile-pic">
-                    <button class="upload-image-button" onclick="document.getElementById('profile-image-input').click();">Upload Image</button>
-                    <input type="file" id="profile-image-input" style="display:none;" accept="image/*" onchange="uploadImage(event)">
+                    <!-- Image upload section: temporary frontend logic -->
+                    <input type="file" id="profileImageUpload" accept="image/*" onchange="displayImagePreview()">
+                    <img id="imagePreview" src="profile-pic-placeholder.png" alt="Profile Image Preview" style="max-width: 200px; border-radius: 8px; border: 2px solid #ddd;">
                 </div>
-                <table class="profile-details">
-                    <tr>
-                        <td><strong>Profile Image:</strong></td>
-                        <td>To be added...</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Name:</strong></td>
-                        <td>Your Name</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Hobbies:</strong></td>
-                        <td>Your hobbies...</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Coffee Order:</strong></td>
-                        <td>Your favorite coffee...</td>
-                    </tr>
-                </table>
+
+                <!--  Start of Placeholder for backend connection for User Profile Info -->
+           
+
+                <!-- Editable fields for Name, Hobbies, and Coffee Order -->
+                <form action="/update-profile" method="POST">
+                    <table class="profile-details">
+                        <tr>
+                            <td><strong>Name:</strong></td>
+                            <td><input type="text" name="name" id="profile-name" value="Your Name"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hobbies:</strong></td>
+                            <td><input type="text" name="hobbies" id="profile-hobbies" value="Your hobbies..."></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Coffee Order:</strong></td>
+                            <td><input type="text" name="coffee" id="profile-coffee" value="Your favorite coffee..."></td>
+                        </tr>
+                    </table>
+                    <button type="submit" class="button">Update Profile</button>
+                </form>
             </div>
+
+                <!--  End of Placeholder for backend connection for storing user image -->
+
             <div class="support-email-section">
+                <!-- Support Email with pre-filled subject line -->
                 <p>Support Email:</p>
-                <button class="support-email" onclick="window.location.href='mailto:support@diggydoos.com'">Support Email</button>
+                <a href="mailto:support@diggydoos.com?subject=Support%20Request%20from%20User%20ID%20{{BlueSky User ID}}">
+                    <button class="support-email">Support Email</button>
+                </a>
             </div>
         </div>
     </main>
 
-    
-<footer>
-    <p>&copy; 2024 Diggy Doo's Indie Dome. All rights reserved.</p>
-</footer>
-
+    <footer>
         <p>&copy; 2024 Diggy Doo's Indie Dome. All rights reserved.</p>
     </footer>
 
-    <script src="DiggyMain.js" defer></script>
+    <!-- JavaScript for Profile Image Preview -->
+    <script>
+        function displayImagePreview() {
+            var file = document.getElementById("profileImageUpload").files[0];
+            var reader = new FileReader();
+
+            reader.onloadend = function() {
+                document.getElementById("imagePreview").src = reader.result;
+            }
+
+            if (file) {
+                reader.readAsDataURL(file); // Show image preview before actual storage
+            } else {
+                document.getElementById("imagePreview").src = "profile-pic-placeholder.png";
+            }
+        }
+
+        // Placeholder for Firehorse to backend
+        // function saveImageToBackend() { ... }
+    </script>
+
 </body>
 </html>
