@@ -27,3 +27,25 @@ function uploadImage(event) {
     reader.readAsDataURL(event.target.files[0]);
 }
 // End of Profile Image Upload
+
+// Additional functionality: Login form validation
+document.addEventListener("DOMContentLoaded", function() {
+    const loginForm = document.querySelector("form");
+
+    loginForm?.addEventListener("submit", function(event) {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        if (!username || !password) {
+            event.preventDefault();  // Prevent form submission
+            alert("Please fill out both fields.");
+        }
+    });
+});
+
+// Mobile navigation toggle
+function toggleMenu() {
+    const nav = document.querySelector('nav ul');
+    nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+}
+    
