@@ -17,3 +17,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 // End of Invite button interaction
+// Start of Profile Image Upload
+function uploadImage(event) {
+    const reader = new FileReader();
+    reader.onload = function () {
+        const profilePic = document.getElementById('profile-pic');
+        profilePic.src = reader.result;
+    };
+    reader.readAsDataURL(event.target.files[0]);
+}
+// End of Profile Image Upload
