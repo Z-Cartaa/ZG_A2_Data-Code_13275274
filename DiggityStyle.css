@@ -146,3 +146,101 @@ footer p {
     font-size: 0.9rem;
 }
 /* End of Footer Styles */
+
+/* Profile Page Styles */
+.profile-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-id-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.profile-user-id, .profile {
+    background-color: #FF9E0B;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.profile-image {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-image img {
+    max-width: 100px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
+
+.upload-image-button {
+    padding: 10px;
+    background-color: #FFD700;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.profile-details td {
+    padding: 8px;
+}
+
+/* Archive Page Styles */
+.archive-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.archive-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.archive-table th, .archive-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.archive-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+/* User ID and Profile Button Section */
+.user-id-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.archive-user-id, .profile {
+    background-color: #FF9E0B;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
