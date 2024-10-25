@@ -1,6 +1,6 @@
 # Diggy's Indie Dome
 
-Welcome to **Diggy's Indie Dome**, a simple decentralized platform where the Diggy Doo’s community can share their memories, experiences, and stories without the interference of algorithms or ads. This project is built using **HTML** and **CSS** and is hosted on **GitHub Pages(ATM)**.
+Welcome to **Diggy's Indie Dome**, a simple decentralized platform where the Diggy Doo’s community can share their memories, experiences, and stories without the interference of algorithms or ads. This project is built using **HTML**, **CSS**, **JavaScript**, and **Python** and is hosted on **GitHub Pages(ATM)** and **Replit**.
 
 ## Table of Contents
 1. [About the Project](#about-the-project)
@@ -21,27 +21,31 @@ You can view the live website here: [Diggy's Indie Dome](https://z-cartaa.github
 
 ## Technologies Used
 
-- **HTML5**: For creating the structure of the web pages.
-- **CSS3**: For styling and laying out the content.
+- **HTML**: For creating the structure of the web pages.
+- **CSS**: For styling and laying out the content.
+- **JavaScript**: For styling and laying out the content.
+- **Python**: For styling and laying out the content.
 - **GitHub Pages**: For hosting and deploying the website.
+- **AT Protocol**: For Single 
+- **BlueSky**:
 
 ## Getting Started
 
-To get started with this project, follow the steps below:
+## 1 - Frontend - WebApp
 
-1. Clone the repository to your local machine:
+   1A. Clone the repository to your local machine:
    ```bash
    git clone https://github.com/z-cartaa/ZG_A2_Data-Code_StudentID.git
    ```
 
-2. Navigate to the project directory:
+   1B. Navigate to the project directory:
    ```bash
    cd ZG_A2_Data-Code_StudentID
    ```
 
-3. Open `index.html` in your browser to view the site locally.
+   1C. Open `index.html` in your browser to view the site locally.
 
-4. Alternatively, visit the [Live Demo](https://z-cartaa.github.io/ZG_A2_Data-Code_StudentID/) to view the site hosted on GitHub Pages.
+   1CC. Alternatively, visit the [Live Demo](https://z-cartaa.github.io/ZG_A2_Data-Code_StudentID/) to view the site hosted on GitHub Pages.
 
 ## Features
 
@@ -56,6 +60,10 @@ To get started with this project, follow the steps below:
 - **Interactive Events Page**: Build a section for upcoming Diggy Doo’s events and community gatherings.
 
 ## Contact
+
+## Acknowledgements
+
+- ****: 
 
 TBC - Diggys ? or Students ?
 
